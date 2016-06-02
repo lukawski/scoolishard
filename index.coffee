@@ -4,7 +4,7 @@ $ ->
     $.get '/server/file' + $(this).attr('id') + '.txt', (data) ->
       $('#fileContent').text data
 
-  $('.book').click (e) ->
+  $('.book').one 'click', ->
     bookNum = $(this).attr('id')
     $.get '/server/books.xml', (data, status) ->
       $(data).find('book').each ->
@@ -15,4 +15,4 @@ $ ->
           content = $(this).find('description').text()
           pages = $(this).find('pages').text()
           divId = '#book' + id
-          $(divId).append '<ul class=\'bookList\'> <li>' + title + '</li> <li>' + author + '</li> </ul>'
+          $(divId).append '<ul class="bookList"> <li>' + title + '</li> <li>' + author + '</li> <li>' + content + '</li> <li>' + pages + '</li> </ul>'
