@@ -1,0 +1,18 @@
+.podanie {
+    font-weight:bold; 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.tresc {
+    text-indent: 50px;
+    margin-bottom:  50px;
+}
+.pieczec {
+    width: 60px; height: 60px; border-style:dotted; border-width: 3px; border-radius:50px;
+}
+.right {
+    text-align: right;
+}
+.adres {
+    margin-bottom: 50px;
+}

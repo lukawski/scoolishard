@@ -7,6 +7,7 @@
         <meta name="description" content="WIA 1">
         <meta name="keywords" content="tekst, formatowanie, html, css">
         <meta name="robots" content="index, nofollow">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <style>
             body {
                 background-color: #808080;
@@ -14,19 +15,22 @@
                 font-size: 12px;
                 color: #333333;
             }
-            div {
+            .first {
                 background-color: #e6e6e6;
                 width: 640px;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 50px;
                 padding: 30px;
                 border-style:solid;
                 border-width: 3px;
             }
         </style>
+        
+        <link rel="stylesheet" type="text/css" href="wia1.css">
     </head>
     <body>
-        <div>
+        <div class="first">
             <p style="text-align:right;">Szczecin, dnia 19.09.2016</p>
             <p style="margin-bottom: 50px;">Jan Kowalski<br>
                Ulica Wojska Polskiego 12<br>
@@ -38,6 +42,24 @@
             <p style="width: 60px; height: 60px; border-style:dotted; border-width: 3px; border-radius:50px;"></p>
             <p style="text-align: right; margin-top: -60px;">Z poważaniem</p>
             <p style="text-align: right">Kowalski</p>
+        </div>
+        
+        <div class="first row">
+            <div class="col s4 offset-s8">Szczecin, dnia 19.09.2016</div>
+            <div class="col s12 adres">Jan Kowalski<br>
+                                 Ulica Wojska Polskiego 12<br>
+                                 70-733 Szczecin</div>
+            <div class="col s6 offset-s6 podanie">Podanie</div>
+            <div class="col s12 tresc">Zwracam się z uprzejmą prośbą o <span style="background-color: #ffff00;">&#171; przyjęcie &#187;</span> mnie do klubu AZS do sekcji <span style="background-color: #ffff00;color:#ff0000;">&#171; tenisa &#187;</span>.
+               Prośbę swą motywuję chęcią doskonalenia umiejętności sportowych.</p></div>
+            <div class="col s6 left">
+                Miejsce na pięczęć
+                <p class="pieczec"></p>
+            </div>
+            <div class="col s3 offset-s3 right">
+                Z poważaniem
+                <p>Kowalski</p>
+            </div>
         </div>
     </body>
 </html>
