@@ -1,0 +1,26 @@
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+table {
+	height:160px; 
+	width: 600px; 
+	border-spacing: 0px;
+}
+
+td, th {
+
+	border: 1px ridge #663366;
+}
+
+.blue {
+	background-color: #3399ff;
+}
+
+.green {
+	background-color: #ccff99;
+}
+
+.yellow {
+	background-color:#ffff80;
+}
