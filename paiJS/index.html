@@ -3,11 +3,23 @@
     <head>
         <title>PAI JavaScript</title>
         <meta charset="utf-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript" src="cw4.js"></script>
+        <script type="text/javascript" src="cw6.js"></script>
+        <!--<script type="text/javascript" src="cw4.js"></script>
         <script type="text/javascript" src="cw3.js"></script>
-        <script type="text/javascript" src="cw2.js"></script>
+        <script type="text/javascript" src="cw2.js"></script>-->
     </head>
     <body>
+        <form>
+            <div>
+                Tekst
+                <input type="text" name="check" onkeyup="checkLength(this)" data-counter="counter1"/>
+                Pozostała liczba znaków: <span class="counter" id="counter1">20</span>
+            </div>
+            <div>
+                Hasło
+                <input type="text" name="check" onkeyup="checkLength(this)" data-counter="counter2"/>
+                Pozostała liczba znaków: <span class="counter" id="counter2">20</span>
+            </div>
+        </form>
     </body>
 </html>
