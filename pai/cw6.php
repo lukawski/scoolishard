@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ćwiczenia 4 PHP</title>
+        <title>Ćwiczenia 6 PHP</title>
         <meta charset="utf-8">
     </head>
     <style type="text/css">
