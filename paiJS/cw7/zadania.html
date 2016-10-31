@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Ćwiczenie 7</title>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/cw4.js"></script>
+    <script type="text/javascript" src="js/divisibility.js"></script>
     <script type="text/javascript">
         document.write('<div>Tekst w JavaScript</div>')
     </script>
@@ -25,13 +27,32 @@
             </script>
         </pre>
     <button onclick="alert('BARDZO WAŻNA INFORMACJA - nie lubię się uczyć! :)')">ALERT!</button>
+
     <pre>
             <script type="text/javascript">
                 document.writeln(napis('Jan', 'Kowalski', '30'))
             </script>
-        </pre>
-    <button onclick="pageReload()">Przeładowanie strony</button>
+    </pre>
+
+    <button onclick="reloadPage()">Przeładowanie strony</button>
     <button onclick="changeBg()">Kolorowanie strony</button>
+    <button onclick="closePage()">Zamknięcie strony</button>
+
+    <h4>Obliczanie pierwiastków funkcji kwadratowej</h4>
+    <form onsubmit="return quadraticForm(this)">
+        a = <input type="number"> b = <input type="number"> c = <input type="number">
+        <button type="submit">Oblicz</button>
+    </form>
+    <pre id="qResult"></pre>
+
+    <h4>Sprawdzanie podzielności liczb</h4>
+    <form onsubmit="return divForm(this)">
+        Liczba dzielona = <input type="number"> Dzielnik = <input type="number">
+        <button type="submit">Oblicz</button>
+    </form>
+    <pre id="dResult"></pre>
+
+
 </body>
 
 </html>
