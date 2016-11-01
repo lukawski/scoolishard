@@ -52,7 +52,32 @@
     </form>
     <pre id="dResult"></pre>
 
+    <input type="text" name="miasto" value="Szczecin" id="miasto">
+    <button type="button" onclick="city()">Miasto</button>
+    <br>
 
+    <input type="number" name="zmienna_1" id="zmienna_1" value="0">
+    <input type="number" name="zmienna_2" id="zmienna_2" value="0">
+    <input type="number" name="rozwiazanie" id="rozwiazanie" value="0" disabled>
+    <button type="button" onclick="add()">DODAJ</button>
+    <br>
+
+    <input type="number" name="zmienna_a" id="zmienna_a" value="5">
+    <input type="number" name="zmienna_b" id="zmienna_b" value="100">
+    <button type="button" onclick="swap()">ZAMIEŃ</button>
+    <br>
+
+    <button type="button" onclick="goToPage(this)" value="http://www.sci.edu.pl/">sci.edu.pl</button>
+    <button type="button" onclick="newWindow()">Otwórz okno</button>
+
+    <script>
+        for (var key in navigator) {
+            console.log(key, navigator[key])
+        }
+        for (var k in screen) {
+            console.log(k, screen[k])
+        }
+    </script>
 </body>
 
 </html>

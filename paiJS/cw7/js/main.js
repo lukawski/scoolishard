@@ -46,3 +46,32 @@ function divForm (form) {
   document.getElementById('dResult').innerHTML = (dRes === true) ? mssg : "Brak podzielności"
   return false
 }
+
+function city () {
+  var city = document.getElementById('miasto')
+  alert(city.value)
+}
+
+function add () {
+  var a = parseInt(document.getElementById('zmienna_1').value),
+      b = parseInt(document.getElementById('zmienna_2').value),
+      result = document.getElementById('rozwiazanie')
+  result.value = a + b
+}
+
+function swap () {
+  var temp = 0,
+      a = document.getElementById('zmienna_a'),
+      b = document.getElementById('zmienna_b')
+  temp = a.value
+  a.value = b.value
+  b.value = temp
+}
+
+function goToPage (url) {
+  location.href = url.value
+}
+
+function newWindow () {
+  window.open('./okienko.html', '_blank', 'width=200, height=200')
+}
