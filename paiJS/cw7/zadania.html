@@ -10,9 +10,14 @@
     <script type="text/javascript">
         document.write('<div>Tekst w JavaScript</div>')
     </script>
+    <script src="http://cdn.ckeditor.com/4.5.11/standard/ckeditor.js"></script>
     <style>
         body {
             transition: all 1s;
+        }
+        
+        * {
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -77,6 +82,11 @@
         for (var k in screen) {
             console.log(k, screen[k])
         }
+    </script>
+
+    <textarea name="editor1"></textarea>
+    <script>
+        CKEDITOR.replace('editor1');
     </script>
 </body>
 
