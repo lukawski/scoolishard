@@ -1,0 +1,111 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.header, .adv, .content {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.header {
+    background: url('gradient.png');
+    padding-bottom: 37px;
+}
+
+.header h1 {
+    color: #bb4a10;
+}
+
+.header ul {
+    text-align: right;
+    color: white;
+}
+
+.header ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    transition: all .2s;
+}
+
+.header ul li:hover {
+    background-color: #2b2f30;
+    border-radius: 5px;
+}
+
+.adv {
+    background: #F7F7F7;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    height: 236px;
+}
+
+.adv div, img {
+    float: left;
+}
+
+.adv-content {
+    white-space: pre-line;
+    height: 216px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.adv-content p {
+    line-height: 30px;
+}
+
+.adv-content button {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    background-color: #c31284;
+    outline: none;
+    border-color: #c31284;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.col {
+    width: 33.3%;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+
+.col-p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right-style: groove;
+}
+
+.col a {
+    color: #c31284;
+    text-decoration: underline;
+}
+
+.col h3 {
+    color: #c31284;
+    font-weight: bolder;
+}
