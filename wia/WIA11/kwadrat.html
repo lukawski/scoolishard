@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <title>WIA 11</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="baner bg-gray text-center">
+    <a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a>
+  </div>
+  <div class="row">
+    <nav class="left bg-gray">
+      <h3>WYBIERZ FIGURĘ</h3>
+      <ol>
+        <li><a href="kwadrat.html">KWADRAT</a></li>
+        <ul>
+          <li>obwód</li>
+          <li>pole</li>
+        </ul>
+        <li><a href="kolo.html">KOŁO</a></li>
+        <ul>
+          <li>obwód</li>
+          <li>pole</li>
+        </ul>
+      </ol>
+      <h3><a href="matematycy.accdb" download>BAZA DANYCH</a></h3>
+    </nav>
+    <div class="right">
+      <h1>KWADRAT</h1>
+      <label for="length">Podaj długość boku:</label>
+      <input type="number" name="length" id="length" min="0">
+      <div>
+        <button onclick="pole()">licz pole</button>
+        <button onclick="obw()">licz obwód</button>
+      </div>
+      <div id="result"></div>
+    </div>
+  </div>
+  <footer class="bg-gray text-center">
+    Strona stworzona przez: <a href="https://github.com/lukawski">Kacper Łukawski</a> 4B
+  </footer>
+
+  <script>
+    function check (val) {
+      try {
+        console.log(typeof  val)
+        if (typeof val !== 'number' || !val) { throw 'Należy wpisać wartość liczbową większą od 0' }
+        else { return val }
+      }  catch (err) {
+        alert(err)
+      }
+    }
+    function pole () {
+      var len = Number(document.getElementById('length').value)
+      if(!check(len)) return null
+      document.getElementById('result').innerHTML = 'P = a<sub>2</sub> = ' + Math.pow(len, 2)
+    }
+
+    function obw () {
+      var len = Number(document.getElementById('length').value)
+      if(!check(len)) return null
+      document.getElementById('result').innerHTML = 'Obw = 4a = ' + len * 4
+    }
+  </script>
+</body>
+
+</html>
